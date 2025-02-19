@@ -8,6 +8,6 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /my_app
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /11sprint
 
-CMD ["/my_app"] 
+CMD ["/11sprint"] 
